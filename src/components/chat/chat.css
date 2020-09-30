@@ -1,0 +1,104 @@
+.chat{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.chat-info{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #F7F8FB;
+}
+
+.chat-info h3{
+    margin-left: 40px;
+}
+
+.userlist{
+    margin:0;
+    padding: 0;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.userlist li{
+    margin-bottom: 15px;
+    margin-left: 50px;
+    width: 200px;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.chat-messages{
+    overflow: hidden;
+    width: 700px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.message-list{
+    height: 400px;
+    overflow: auto;
+    width: calc(100% + 20px);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.message-item{
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 20px;
+}
+
+.message-text{
+    color:white;
+    background-color: #736BFF;
+    border-radius: 8px;
+    width: 500px;
+    padding: 15px 10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.username{
+    color: grey;
+}
+
+.send-form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-form textarea{
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.send-form button{
+    margin-top: 8px;
+    width: 120px;
+    padding : 10px 5px;
+    border: 0;
+    background-color: #0076FF;
+    color: white;
+    border-radius: 4px;
+}
+
+.send-form button:hover{
+    background-color: #00afe4;
+}

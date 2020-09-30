@@ -1,0 +1,32 @@
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 300px; */
+    align-items: center;
+    margin-top: 100px
+}
+
+.auth-input{
+    width: 300px;
+    padding : 12px 5px;
+    margin-bottom: 10px;
+}
+
+.auth-input::placeholder{
+    font-size: 18px;
+}
+
+.auth-button{
+    width: 300px;
+    margin-top:30px;
+    padding: 12px 5px;
+    border: 0;
+    background-color: #04771d;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.auth-button:hover{
+    background-color: #31a54b;
+}
