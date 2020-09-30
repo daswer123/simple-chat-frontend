@@ -1,3 +1,4 @@
+Серверная часть находится по ссылке : https://github.com/daswer123/simple-chat-backend
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
