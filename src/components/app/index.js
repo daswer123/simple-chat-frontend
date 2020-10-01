@@ -3,34 +3,21 @@ import Chat from "../chat";
 import Auth from "../auth";
 
 import socket from "../../socket";
+import {Context,reducer, initalState} from "../../reducer";
 
-const initalState = {
-    connect : false
-}
-function reducer(state = initalState,action){
-    switch (action.type) {
-        case "Connect":
-            return {connect : true}
-        default:
-            return state
-    }
-}
 
-const App = () => {
-    const [state, dispath] = useReducer(reducer,initalState)
+const App = () => {    
 
-    const onChangeConnect = () => {
-        console.log("HI")
-        dispath({type : "Connect"})
-        console.log(socket)
-    }
+    const [state,dispath] = useReducer(reducer,initalState)
 
-    const view = state.connect ? <Chat/> : <Auth changeConnect={onChangeConnect} />;
+    const view = state.connect ? <Chat/> : <Auth/>;
 
 
     return (
         <>
-            {view}
+          <Context.Provider value={{dispath,state}}>
+              {view}
+          </Context.Provider>
         </>
     )
 }

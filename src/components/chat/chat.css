@@ -80,11 +80,13 @@
     flex-direction: column;
 }
 
-.send-form textarea{
+.send-form input{
     width: 80%;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    min-height: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
     border: 0;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
@@ -101,4 +103,8 @@
 
 .send-form button:hover{
     background-color: #00afe4;
+}
+
+.mine-message{
+    background-color: rgb(26, 190, 155);
 }
