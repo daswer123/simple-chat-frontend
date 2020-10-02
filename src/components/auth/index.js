@@ -11,6 +11,10 @@ const Auth = () => {
     const onEnter = async (e) => {
         e.preventDefault()
 
+        dispath({
+            type: "Loading"
+        })
+
         const data = {
             username : user,
             roomName : roomId,
@@ -48,11 +52,13 @@ const Auth = () => {
         setRoomId(e.target.value)
     }
 
+    const Button = state.loading ?  <button type="button" disabled type="submit" className="enter">Вход...</button> : <button type="button" type="submit" className="auth-button">Войти </button>
+
     return (
         <form className="auth-form" action="/rooms" onSubmit={(e) => onEnter(e)} method="POST">
-            <input type="text" className="auth-input" name="roomId" onInput={(e) => onRoomType(e)} placeholder="Room ID"/>
-            <input type="text" className="auth-input" name="name"  onInput={(e) => onUserType(e)} placeholder="Ваше имя"/>
-            <button type="button" type="submit" className="auth-button">Войти </button>
+            <input required type="text" className="auth-input" name="roomId" onInput={(e) => onRoomType(e)} placeholder="Room ID"/>
+            <input required type="text" className="auth-input" name="name"  onInput={(e) => onUserType(e)} placeholder="Ваше имя"/>
+            {Button}
         </form>
     )
 }

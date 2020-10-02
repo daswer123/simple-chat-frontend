@@ -1,5 +1,7 @@
 import React, { useContext } from "react"
 import { Context } from "../../reducer"
+const uuid = require("uuid")
+
 
 const Message = ({text,user}) => {
     const {state,dispath} = useContext(Context)
@@ -10,7 +12,7 @@ const Message = ({text,user}) => {
     }
 
     return (
-    <li className="message-item" key={text+user}>
+    <li className="message-item" key={uuid.v4()}>
         <p className={className}>{text}</p>
         <span className="username">{user}</span>
     </li>

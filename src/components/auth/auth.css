@@ -27,6 +27,18 @@
     font-weight: bold;
 }
 
+.enter{
+    background-color: #94d6a2;
+    cursor: wait;
+    width: 300px;
+    margin-top:30px;
+    padding: 12px 5px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .auth-button:hover{
     background-color: #31a54b;
 }

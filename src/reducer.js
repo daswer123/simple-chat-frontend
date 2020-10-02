@@ -4,6 +4,7 @@ const Context = React.createContext();
 
 const initalState = {
     connect : false,
+    loading : false,
     users : [],
     messages : [],
     username : null,
@@ -12,11 +13,17 @@ const initalState = {
 
 function reducer(state ,action){
     switch (action.type) {
+        case "Loading":
+            return{
+                ...state,
+                loading : true
+            }
         case "Connect":
             const {username,roomName} = action.payload
             return {
                 ...state,
                 connect : true,
+                loading : false,
                 username,
                 roomName
             }

@@ -36,6 +36,8 @@ const UserList = ({users}) => {
     },[])
 
     return (<div className="chat-info">
+        <h3>Комната: {state.roomName}</h3>
+        <hr/>
         <h3>Пользователи: {users.length}</h3>
         <ul className="userlist">
             {users.map(user => {
