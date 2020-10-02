@@ -4,14 +4,14 @@
 
 Серверная часть написана на Node Js
 
+Серверная часть находится по ссылке : https://github.com/daswer123/simple-chat-backend
+
 # Какие технологии использовались для этого проекта
  * [ReactJS](https://ru.reactjs.org/)
  * [Sokect.IO](https://socket.io/)
  * React Hooks ( useState, useEffect, useRef, useReducer )
  * [React-emoji-picker](https://www.npmjs.com/package/emoji-picker-react)
  * [uuid](https://www.npmjs.com/package/uuid)
-
-Серверная часть находится по ссылке : https://github.com/daswer123/simple-chat-backend
 
 Демонтрацию работы сайта вы можете посмотреть на видео [по ссылке](https://www.youtube.com/watch?v=IxR3XQjxIcg)
 
