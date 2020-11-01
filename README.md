@@ -4,7 +4,8 @@
 
 Серверная часть написана на Node Js
 
-Серверная часть находится по ссылке : https://github.com/daswer123/simple-chat-backend
+Серверная часть находится по ссылке : https://github.com/daswer123/simple-chat-backend 
+Express + Socket IO
 
 # Какие технологии использовались для этого проекта
  * [ReactJS](https://ru.reactjs.org/)
